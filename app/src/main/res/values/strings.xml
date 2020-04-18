@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Socko Demo</string>
+    <string name="test1">Molecular testing—a PCR test that detects the presence of the virus itself is generally considered the most reliable means of diagnosis. Positive IgM and IgG tests for dengue antibodies detected in an initial blood sample.</string>
+    <string name="test1_title"><![CDATA[Dengue Antigen NS1, IgG & IgM]]></string>
+    <string name="test2">" Liver function tests, also referred to as a hepatic panel, These tests include prothrombin time (PT/INR), aPTT, albumin, bilirubin (direct and indirect), "</string>
+    <string name="iso">ISO, NABL Certified</string>
+</resources>

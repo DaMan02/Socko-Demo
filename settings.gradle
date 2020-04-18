@@ -1,0 +1,2 @@
+rootProject.name='Socko Demo'
+include ':app'

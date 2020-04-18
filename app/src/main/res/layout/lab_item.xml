@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="2dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp"
+    app:cardCornerRadius="4dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="116dp"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:src="@drawable/lab1"
+            />
+        <TextView
+            android:id="@+id/iso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:layout_below="@+id/img"
+            android:text="@string/iso"/>
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/iso"
+            android:text="Price"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/price">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/colorFont"
+                android:text="₹ "/>
+
+            <TextView
+                android:id="@+id/new_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/colorFont"
+                android:fontFamily="@font/muli_extrabold"
+                android:text="2,000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/colorFont"
+                android:layout_marginStart="8dp"
+                android:text="₹ "/>
+
+            <TextView
+                android:id="@+id/old_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="3,500"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/locImg"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_toEndOf="@+id/img"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="26dp"
+            android:src="@drawable/loc"/>
+        <TextView
+            android:id="@+id/loc"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorFont"
+            android:textSize="12sp"
+            android:layout_toEndOf="@+id/locImg"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="4dp"
+            android:text="Block A, No 12, Shriram Gateway Building, Ambattur, Chennai"/>
+        
+        <TextView
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.5"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"
+            android:textSize="12sp"
+            android:layout_alignParentEnd="true"
+            android:drawableEnd="@drawable/ic_star"
+            android:fontFamily="@font/muli_semibold"
+            android:textColor="@android:color/white"
+            android:background="#06C33B"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Lab"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/muli_extrabold"
+            android:textAllCaps="true"
+            android:layout_marginBottom="4dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

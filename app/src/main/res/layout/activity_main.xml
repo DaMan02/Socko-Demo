@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".ui.MainActivity">
+
+    <include
+        android:id="@+id/head"
+        layout="@layout/header"
+        android:layout_height="156dp"
+        android:layout_width="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/tests"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/head"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorFont"
+        android:layout_marginStart="10dp"
+        android:textSize="14sp"
+        android:fontFamily="@font/muli_bold"
+        android:text="Selected Tests"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/muli_extrabold"
+            android:text="02"/>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/test1"
+        layout="@layout/test1"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@+id/tests"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+
+    <include
+        android:id="@+id/test2"
+        layout="@layout/test2"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@+id/test1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/labs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/test2"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorFont"
+            android:layout_marginStart="10dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/muli_bold"
+            android:text="Select Lab for Test or Home sample collection"/>
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"
+            android:layout_marginStart="6dp"
+            android:fontFamily="@font/muli_extrabold"
+            android:text="0"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/labs"/>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labs"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
+</androidx.core.widget.NestedScrollView>

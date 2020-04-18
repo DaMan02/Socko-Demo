@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="4dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardMaxElevation="1dp"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorFont"
+            android:fontFamily="@font/muli_semibold"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:textSize="13sp"
+            android:text="Liver Function Test"/>
+
+        <ImageView
+            android:layout_width="11dp"
+            android:layout_height="11dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_close"/>
+
+        <TextView
+            android:id="@+id/des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorFont"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="8dp"
+            android:textSize="12sp"
+            android:layout_below="@+id/title"
+            android:text="@string/test2"
+            android:layout_marginBottom="10dp"
+            />
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>
